@@ -41,8 +41,6 @@ I created fictional users in the tenant and filled in profile details such as **
 
 ![User overview](img/User_overview.png)
 
-*(Add a screenshot of a user's Overview/Properties page, hiding your real data.)*
-
 ---
 
 ## 2. Groups and roles
@@ -54,10 +52,8 @@ I organized users into **groups** and assigned administrative **roles**.
 
 | User | Group(s) | Role(s) |
 |---|---|---|
-| [fictional user 1] | [group] | [role] |
-| [fictional user 2] | [group] | [role] |
-
-*(Fill in with what you actually configured.)*
+| Trevor | Data Analyst | Insights Analyst, Desktop Analytics Administrator |
+| D4vid | Help Desk | HelpDesk Administrator, User Administrator |
 
 ![Groups and roles](img/Groups_roles.png)
 
@@ -97,23 +93,31 @@ Diagnostic conclusion: the sign-in failed because **the password provided was in
 
 ### Exported log
 
-I exported the events as CSV: [`logs/sign-in-history.csv`](logs/sign-in-history.csv).
+I exported the events as CSV: [`logs/InteractiveSignIns.csv`](logs/InteractiveSignIns.csv).
 
 Columns I used in the analysis:
 
 | Column | What it shows |
 |---|---|
-| Date | Date and time of the event (UTC) |
-| User principal name | Who tried to sign in |
-| Application | Application accessed |
-| Status | Success, Failure, or Interrupted |
-| Sign-in error code | Error code, used to look up the cause |
-| Failure reason | Reason for the failure in text |
+| Date (UTC) | Date and time of the ocurrency |
+| User agent | Which browser that person was using to connect |
+| User | Person's User who is trying to login|
+| Username | Person's Username who is trying to login |
+| User type | The type of user who is trying to login, either a member or a guest |
+| Application| Through which platform that person is trying to access |
+| Status| The status of the login tries, being a failure, interupted or success |
+|Sign-in error code | The sign-in error code tells us what was the error |
+|Failure reason | the reason for the error |
+|Client app	| Which platform that person was using to login |
+|Browser | Which browser that person was using |
+|Operating System | Which system that person was using |
+
 
 | Error code | Meaning |
 |---|---|
-| [code 1, confirm in your CSV] | [meaning] |
-| [code 2, confirm in your CSV] | [meaning] |
+| 50126 | Error validating credentials due to invalid username or password. |
+| 50055 | The password is expired. |
+| 50140 | This occurred due to 'Keep me signed in' interrupt when the user was signing in. |
 
 ---
 

@@ -55,8 +55,6 @@ I organized users into **groups** and assigned administrative **roles**.
 | Trevor | Data Analyst | Insights Analyst, Desktop Analytics Administrator |
 | D4vid | Help Desk | HelpDesk Administrator, User Administrator |
 
-![Groups and roles](img/Groups_roles.png)
-
 ---
 
 ## 3. Simulating failed sign-ins and account lockout

@@ -10,7 +10,7 @@ Everything here is done in my own environment with **fictional users and data**.
 
 | Project | What it covers | Tools |
 |---|---|---|
-| [Tier 1 Support Lab with Microsoft Entra ID](./IT Support Lab with Microsoft Entra ID) | Creating and configuring users, groups and roles, simulating failed sign-ins and account lockout, troubleshooting with sign-in logs, password reset, and a full simulated support ticket | Microsoft Entra ID, Azure Portal |
+| [Tier 1 Support Lab with Microsoft Entra ID](https://github.com/cenove/azure-lab/tree/628821e4782045ab4eeb91e3c41e5ebd21c73bbe/IT%20Support%20Lab%20with%20Microsoft%20Entra%20ID) | Creating and configuring users, groups and roles, simulating failed sign-ins and account lockout, troubleshooting with sign-in logs, password reset, and a full simulated support ticket | Microsoft Entra ID, Azure Portal |
 
 ---
 
